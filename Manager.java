@@ -8,12 +8,9 @@ public class Manager extends Employee {
 	}
 
 
-
-	@Override
-	public String toString() {
-		return getTitle() + ": " + getName() + ", ID: " + getId() + ", Salary: " + getSalary() + ", Money Earnt with taxes: " + amountEarned;
+	public String getTitle() {
+		return title;
 	}
-
 
 
 	@Override

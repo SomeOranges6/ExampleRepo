@@ -7,6 +7,15 @@ public class Manager extends Employee {
 		setTitle("Manager");
 	}
 
+
+
+	@Override
+	public String toString() {
+		return getTitle() + ": " + getName() + ", ID: " + getId() + ", Salary: " + getSalary() + ", Money Earnt with taxes: " + amountEarned;
+	}
+
+
+
 	@Override
 	public void pay() {
 		amountEarned += getSalary()/52 * getTimeWorked() - (getSalary()/52 * getTimeWorked() * 0.13);

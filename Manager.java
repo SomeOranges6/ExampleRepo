@@ -7,7 +7,6 @@ public class Manager extends Employee {
 		setTitle("Manager");
 	}
 
-
 	public String getTitle() {
 		return title;
 	}

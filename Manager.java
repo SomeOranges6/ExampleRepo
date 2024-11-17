@@ -9,8 +9,8 @@ public class Manager extends Employee {
 
 	@Override
 	public void pay() {
-		amountEarned += getSalary()/52 * getTimeWorked();
-		System.out.println(getTitle() + ": " + getName() + " has been paid " + (getSalary()/52 * getTimeWorked()));
+		amountEarned += getSalary()/52 * getTimeWorked() - (getSalary()/52 * getTimeWorked() * 0.13);
+		System.out.println(getTitle() + ": " + getName() + " has been paid " + (getSalary()/52 * getTimeWorked() - - (getSalary()/52 * getTimeWorked() * 0.13)));
 	}
 
 	@Override

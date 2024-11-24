@@ -1,4 +1,4 @@
-package playground.pathfinding;
+package playground.src.pathfinding;
 
 import java.awt.*;
 
